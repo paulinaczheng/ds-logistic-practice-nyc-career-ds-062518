@@ -161,12 +161,6 @@ Recall the dataset is whether or not a patient has heart disease and is indicate
 
 ```python
 #Your code here 
-X = 
-y = 
-```
-
-
-```python
 X = df[df.columns[:-1]]
 y = df.target
 ```
@@ -310,11 +304,6 @@ df.head()
 
 
 
-
-```python
-#Your code here
-```
-
 # Train Test Split
 Split the data into train and test sets.
 
@@ -352,21 +341,12 @@ Generate predictions for the train and test sets. Use the **predict** method fro
 
 ```python
 #Your code here
-```
-
-
-```python
 y_hat_test = logreg.predict(X_test)
 y_hat_train = logreg.predict(X_train)
 ```
 
 # Initial Evaluation
 How many times was the classifier correct for the training set?
-
-
-```python
-#Your code here
-```
 
 
 ```python
@@ -407,11 +387,6 @@ print(pd.Series(residuals).value_counts(normalize=True))
      1    0.052632
     Name: target, dtype: float64
 
-
-
-```python
-#Your code here
-```
 
 # Analysis
 Describe how well you think this initial model is based on the train and test performance. Within your description, make note of how you evaluated perforamnce as compared to our previous work with regression.
